@@ -12,8 +12,11 @@ fotos: {
 const nomeSemDestructuring = produto.nome
 const fotoPrincipalSemDestructuring = produto.fotos.fotoPrincipal
 
-const { nome } = produto
-const { fotoPrincipal } = produto.fotos
+const { 
+    nome, 
+    fotos : 
+        {fotoPrincipal}
+} = produto
 
 console.log(nome)
 console.log(fotoPrincipal)
